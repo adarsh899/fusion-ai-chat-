@@ -6,10 +6,14 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // Initialize Express app
 const app = express();
-const PORT = 2000;
+const PORT = process.env.PORT || 2000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: '*', // In production, you might want to restrict this to your frontend domain
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Serve static files from the frontend directory
@@ -64,5 +68,5 @@ app.get('*', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
