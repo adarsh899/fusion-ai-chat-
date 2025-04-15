@@ -1,7 +1,3 @@
-Here’s the updated version of your README where **Gemini AI** has been replaced with **AI PlayGround**. It reflects the necessary changes:
-
----
-
 # AI PlayGround Chat Application
 
 A web application that allows you to chat with the AI model via **AI PlayGround**. This application includes both frontend and backend components.
