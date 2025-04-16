@@ -29,7 +29,7 @@ A web application that allows you to chat with the AI model via **AI PlayGround*
 1. Open the file `backend/.env`
 2. Replace `your_api_key_here` with your actual **AI PlayGround** API key:
    ```
-   AI_PLAYGROUND_API_KEY=your_actual_api_key
+   GEMINI_API_KEY=your_actual_api_key
    ```
 
 ### 3. Install Dependencies
