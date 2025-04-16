@@ -46,7 +46,7 @@ npm install
 Start the server:
 
 ```bash
-npm start
+node server.js
 ```
 
 The application will be available at http://localhost:2000
